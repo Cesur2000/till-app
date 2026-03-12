@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Till. — Support</title>
+<style>
+  :root { --bg: #0a0a0a; --card: #141414; --text: #e8e8e8; --muted: #888; --accent: #6C63FF; --border: #222; --green: #34C759; --orange: #FF9500; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+  .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 60px 24px 40px; text-align: center; }
+  .hero h1 { font-size: 2.4rem; font-weight: 700; letter-spacing: -0.5px; }
+  .hero p { color: var(--muted); margin-top: 8px; font-size: 1rem; }
+  .container { max-width: 720px; margin: 0 auto; padding: 32px 24px 80px; }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 28px 24px; margin-bottom: 20px; }
+  .card h2 { font-size: 1.15rem; font-weight: 600; margin-bottom: 12px; color: var(--accent); }
+  .card h3 { font-size: 1rem; font-weight: 600; margin: 16px 0 6px; color: var(--text); }
+  .card p, .card li { font-size: 0.95rem; color: #ccc; }
+  .card ul, .card ol { padding-left: 20px; margin-top: 8px; }
+  .card li { margin-bottom: 6px; }
+  .badge { display: inline-block; background: var(--accent); color: #fff; font-size: 0.7rem; font-weight: 600; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 12px; }
+  .badge.green { background: var(--green); }
+  .badge.orange { background: var(--orange); }
+  .faq-item { border-top: 1px solid var(--border); padding-top: 16px; margin-top: 16px; }
+  .faq-item:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+  .faq-item strong { color: var(--text); font-size: 0.95rem; display: block; margin-bottom: 4px; }
+  .faq-item p { font-size: 0.9rem; color: #aaa; }
+  .contact-btn { display: inline-block; background: var(--accent); color: #fff; font-weight: 600; font-size: 1rem; padding: 14px 32px; border-radius: 12px; text-decoration: none; margin-top: 16px; transition: opacity 0.2s; }
+  .contact-btn:hover { opacity: 0.85; text-decoration: none; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .features { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+  .feature-tag { background: #1a1a2e; border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; text-align: center; font-size: 0.85rem; color: #ccc; }
+  .feature-tag .icon { font-size: 1.4rem; display: block; margin-bottom: 4px; }
+  @media (max-width: 600px) { .hero h1 { font-size: 1.8rem; } .card { padding: 20px 18px; } .features { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Support</h1>
+  <p>Till. — Countdown &amp; Live Activities</p>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <span class="badge green">Features</span>
+    <h2>What is Till.?</h2>
+    <p>Till. is your all-in-one countdown and Live Activity companion for iPhone. Track what matters most — right from your Dynamic Island and Lock Screen.</p>
+    <div class="features">
+      <div class="feature-tag"><span class="icon">⏱</span>Countdown Timers</div>
+      <div class="feature-tag"><span class="icon">🕌</span>Prayer Times</div>
+      <div class="feature-tag"><span class="icon">🧭</span>Qibla Compass</div>
+      <div class="feature-tag"><span class="icon">⚽</span>Football Teams</div>
+      <div class="feature-tag"><span class="icon">🔔</span>Reminders</div>
+      <div class="feature-tag"><span class="icon">💑</span>Couple Tracker</div>
+      <div class="feature-tag"><span class="icon">🏝️</span>Custom Dynamic Island</div>
+      <div class="feature-tag"><span class="icon">📊</span>Multi-Slot Display</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="badge">FAQ</span>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <strong>Q: How do I start a Live Activity?</strong>
+      <p>Navigate to the feature you want (e.g. Prayer Times, Custom Island, Reminders), configure your settings, and tap the "Start Activity" button. The countdown will appear on your Dynamic Island and Lock Screen.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Q: Why doesn't the Dynamic Island show on my phone?</strong>
+      <p>Dynamic Island is available on iPhone 14 Pro and later models. On older iPhones, Live Activities will still appear on the Lock Screen. Make sure Live Activities are enabled in Settings → Till.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Q: How do I add my own football team logo?</strong>
+      <p>Go to Custom Island → Football Teams → tap a team card or "+" to add a new team. You can pick a logo from your Photo Library, set team colors, and enter the team name and short code.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Q: Prayer times are not accurate for my location.</strong>
+      <p>Make sure location access is granted (Settings → Till. → Location → "While Using"). Also try the "Use Current Location" button to refresh. Till. uses the Aladhan API with the Diyanet (Turkey) calculation method by default.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Q: Can I run multiple Live Activities at once?</strong>
+      <p>iOS supports up to 5 simultaneous Live Activities. You can run a Prayer Times activity alongside a Custom Island activity, for example.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Q: The Qibla compass is not working.</strong>
+      <p>Ensure you have granted location and motion permissions. Also, keep your device away from magnets and metal objects that can interfere with the compass sensor. Try calibrating by moving your phone in a figure-8 pattern.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Q: How do I restore my purchases?</strong>
+      <p>Go to the app's settings or premium section and tap "Restore Purchases". Your previous purchases will be restored automatically through your Apple ID.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Q: My settings reset after closing the app.</strong>
+      <p>Till. automatically saves your Custom Island configuration. If settings appear to reset, try force-quitting and reopening the app. If the issue persists, contact support.</p>
+    </div>
+
+    <div class="faq-item">
+      <strong>Q: How do I stop a Live Activity?</strong>
+      <p>Open Till., go to the active feature tab, and tap "Stop Activity". You can also long-press the Live Activity on your Lock Screen and tap "End Activity".</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <span class="badge orange">Troubleshooting</span>
+    <h2>Common Issues</h2>
+
+    <h3>Live Activity not appearing</h3>
+    <ol>
+      <li>Go to Settings → Till. → Live Activities → enable "Allow Live Activities"</li>
+      <li>Make sure you're running iOS 16.1 or later</li>
+      <li>Restart the app and try starting the activity again</li>
+    </ol>
+
+    <h3>Location not working</h3>
+    <ol>
+      <li>Go to Settings → Privacy &amp; Security → Location Services → Till.</li>
+      <li>Select "While Using the App"</li>
+      <li>Return to Till. and refresh</li>
+    </ol>
+
+    <h3>Ads not loading</h3>
+    <p>Ad availability depends on your region and network connection. This does not affect app functionality. Consider upgrading to Premium to remove ads entirely.</p>
+  </div>
+
+  <div class="card">
+    <h2>Contact Support</h2>
+    <p>Can't find an answer above? We're here to help. Send us an email and we'll get back to you within 24 hours.</p>
+    <a href="mailto:tillapp.support@gmail.com" class="contact-btn">📧 Email Support</a>
+    <p style="margin-top: 16px; font-size: 0.85rem; color: var(--muted);">tillapp.support@gmail.com</p>
+  </div>
+
+  <div class="card">
+    <h2>App Information</h2>
+    <ul>
+      <li><strong>App Name:</strong> Till.</li>
+      <li><strong>Developer:</strong> Deadline1</li>
+      <li><strong>Platform:</strong> iOS 16.1+</li>
+      <li><strong>Languages:</strong> English, Turkish</li>
+      <li><strong>Privacy Policy:</strong> <a href="privacy-policy.html">View Privacy Policy</a></li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
