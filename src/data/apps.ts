@@ -134,169 +134,144 @@ const apps: App[] = [
       },
     ],
     privacyPolicy: {
-      lastUpdated: "2025-01-01",
+      lastUpdated: "March 12, 2026",
       sections: [
         {
-          title: "Introduction",
+          title: "Your Privacy Matters",
+          badge: "Overview",
           content:
-            '<p>Welcome to Till ("<strong>we</strong>", "<strong>our</strong>", or "<strong>us</strong>"). We are committed to protecting your privacy and ensuring you have a positive experience when using our app. This Privacy Policy explains how we collect, use, and safeguard your information when you use Till.</p><p>By using Till, you agree to the collection and use of information in accordance with this policy. If you do not agree with the terms of this Privacy Policy, please do not use the app.</p>',
+            "<p>Till. is designed with privacy at its core. We do not collect, store, or transmit any personal data to our servers. All your data stays on your device.</p>",
         },
         {
-          title: "Information We Collect",
-          badge: "Minimal Data",
+          title: "1. Information We Collect",
           content:
-            "<p>Till is designed with privacy in mind. We collect the minimum amount of data necessary to provide you with a great experience:</p><ul><li><strong>Location Data:</strong> Used locally on your device to calculate prayer times and Qibla direction. Your location is never sent to our servers or shared with third parties.</li><li><strong>Device Sensors:</strong> The magnetometer (compass) is accessed locally to provide Qibla direction. This data stays on your device.</li><li><strong>User Preferences:</strong> Your countdown events, settings, and preferences are stored locally on your device and synced via iCloud if enabled.</li><li><strong>Usage Analytics:</strong> We may collect anonymous, aggregated usage data to help us improve the app. This data cannot be used to identify you personally.</li></ul>",
+            '<p>Till. does <strong>not</strong> collect personal information. The app may access the following device features only when you explicitly grant permission:</p><ul><li><strong>Location (When In Use)</strong> — Used solely to fetch accurate prayer times based on your geographic coordinates and to determine Qibla direction. Your location is sent directly to the Aladhan prayer times API and is never stored on our servers.</li><li><strong>Photo Library</strong> — Used only when you choose to upload a custom team logo or couple photo for the Dynamic Island display. Photos are processed locally on your device and are never uploaded anywhere.</li><li><strong>Motion &amp; Compass</strong> — Used to power the Qibla compass feature. Sensor data is processed in real-time on your device and is never recorded or transmitted.</li></ul>',
         },
         {
-          title: "How We Use Your Information",
+          title: "2. Live Activities & Dynamic Island",
           content:
-            "<p>The information we access is used solely to provide and improve the app's functionality:</p><ul><li><strong>Prayer Times:</strong> Your location is used on-device to calculate accurate prayer times for your area.</li><li><strong>Qibla Direction:</strong> Your location and device compass are used on-device to determine the direction of the Kaaba.</li><li><strong>Countdowns &amp; Reminders:</strong> Your event data is stored locally to power countdown timers, reminders, and Live Activities.</li><li><strong>Football Schedules:</strong> Match data is fetched from third-party sports APIs to display upcoming fixtures for your selected teams.</li><li><strong>App Improvement:</strong> Anonymous analytics help us understand which features are most popular and identify areas for improvement.</li></ul>",
+            "<p>Till. uses Apple's ActivityKit to display countdown timers, prayer times, reminders, and custom information on the Lock Screen and Dynamic Island. All Live Activity data is processed and rendered entirely on your device by iOS. No data is sent to external servers for this feature.</p>",
         },
         {
-          title: "Data Storage & Security",
-          badge: "On-Device",
+          title: "3. Advertising",
           content:
-            "<p>Your personal data — including countdowns, prayer time settings, and preferences — is stored locally on your device. If you have iCloud enabled, some data may be synced across your Apple devices via iCloud, which is governed by <a href=\"https://www.apple.com/legal/privacy/\" target=\"_blank\" rel=\"noopener noreferrer\">Apple's Privacy Policy</a>.</p><p>We do not operate our own servers to store your personal data. We implement appropriate technical measures to protect the data processed within the app.</p>",
+            '<p>Till. displays ads provided by <strong>Google AdMob</strong>. AdMob may collect certain device and usage data to serve relevant advertisements. This data collection is governed by Google\'s privacy policy.</p><ul><li>We use Apple\'s App Tracking Transparency (ATT) framework. You will be asked for permission before any tracking occurs.</li><li>If you decline tracking, you will still see ads, but they will not be personalized.</li><li>For more information, see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google\'s Privacy Policy</a>.</li></ul>',
         },
         {
-          title: "Third-Party Services",
+          title: "4. Data Storage",
           content:
-            '<p>Till may use the following third-party services:</p><ul><li><strong>Apple Services:</strong> iCloud for data sync, StoreKit for in-app purchases, and WidgetKit/ActivityKit for widgets and Live Activities. These are governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener noreferrer">Apple\'s Privacy Policy</a>.</li><li><strong>Sports Data Providers:</strong> We fetch publicly available football fixture data from third-party APIs. No personal data is shared with these providers.</li><li><strong>RevenueCat:</strong> Used to manage subscriptions and in-app purchases. RevenueCat may collect anonymous purchase data. See <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat\'s Privacy Policy</a>.</li></ul><p>We do not sell, trade, or rent your personal information to third parties.</p>',
+            "<p>All app settings, reminders, couple dates, football team configurations, and preferences are stored locally on your device using iOS standard storage mechanisms (UserDefaults and App Group containers). We do not operate any backend servers or cloud databases.</p>",
         },
         {
-          title: "Notifications & Background Activity",
+          title: "5. Third-Party Services",
           content:
-            "<p>Till may send local notifications for countdown events, prayer times, and reminders. These notifications are scheduled locally on your device and do not require a server connection.</p><p>Live Activities and Dynamic Island updates run in the background using Apple's ActivityKit framework. No personal data leaves your device during these updates.</p><p>You can manage notification permissions at any time in your device's Settings app under Till.</p>",
+            '<ul><li><strong>Aladhan API</strong> — Prayer times are fetched from <a href="https://aladhan.com/prayer-times-api" target="_blank" rel="noopener">aladhan.com</a>. Only your latitude and longitude are sent to calculate prayer times. No personal identifiers are transmitted.</li><li><strong>Google AdMob</strong> — Used for displaying advertisements. See section 3 above.</li><li><strong>Apple StoreKit</strong> — Used for in-app purchases. Transactions are handled entirely by Apple.</li></ul>',
         },
         {
-          title: "Children's Privacy",
+          title: "6. Children's Privacy",
           content:
-            "<p>Till is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a href=\"mailto:mesutcydev@gmail.com\">mesutcydev@gmail.com</a> so we can take appropriate action.</p>",
+            "<p>Till. is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided personal information through the app, please contact us so we can take appropriate action.</p>",
         },
         {
-          title: "Your Rights",
+          title: "7. Data Retention & Deletion",
           content:
-            '<p>Depending on your jurisdiction, you may have the following rights regarding your data:</p><ul><li><strong>Access:</strong> Request information about the data we process.</li><li><strong>Deletion:</strong> Since your data is stored locally, you can delete it by removing the app or clearing app data in Settings.</li><li><strong>Opt-Out:</strong> You can disable analytics and notifications at any time in the app\'s settings.</li><li><strong>Data Portability:</strong> Your data is stored in standard formats within your iCloud account and on your device.</li></ul><p>To exercise any of these rights, please contact us at <a href="mailto:mesutcydev@gmail.com">mesutcydev@gmail.com</a>.</p>',
+            "<p>Since all data is stored locally on your device, you have full control. You can delete all app data at any time by uninstalling Till. from your device. No residual data remains on any server.</p>",
         },
         {
-          title: "Changes to This Privacy Policy",
+          title: "8. Changes to This Policy",
           content:
-            '<p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last Updated" date at the top of this page. We encourage you to review this Privacy Policy periodically to stay informed about how we are protecting your information.</p><p>Continued use of the app after any changes to this Privacy Policy constitutes your acceptance of those changes.</p>',
+            '<p>We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated "Last Updated" date. Continued use of the app after changes constitutes acceptance of the revised policy.</p>',
         },
         {
-          title: "Contact Us",
+          title: "9. Contact Us",
           content:
-            '<p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p><ul><li><strong>Email:</strong> <a href="mailto:mesutcydev@gmail.com">mesutcydev@gmail.com</a></li><li><strong>Website:</strong> <a href="https://mesut.uk" target="_blank" rel="noopener noreferrer">mesut.uk</a></li></ul><p>We will respond to your enquiry within 30 days.</p>',
+            '<p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p><p><strong>Email:</strong> <a href="mailto:mesutcydev@gmail.com">mesutcydev@gmail.com</a></p>',
         },
       ],
     },
     support: {
       intro:
-        "Need help with Till? Browse the features below, check our FAQ, or follow the troubleshooting steps to resolve common issues.",
+        "Till. is your all-in-one countdown and Live Activity companion for iPhone. Track what matters most — right from your Dynamic Island and Lock Screen.",
       features: [
-        { name: "Countdown Timers", icon: "⏳" },
+        { name: "Countdown Timers", icon: "⏱" },
         { name: "Prayer Times", icon: "🕌" },
         { name: "Qibla Compass", icon: "🧭" },
         { name: "Football Teams", icon: "⚽" },
         { name: "Reminders", icon: "🔔" },
         { name: "Couple Tracker", icon: "💑" },
-        { name: "Dynamic Island", icon: "🏝️" },
-        { name: "Multi-Slot Display", icon: "📱" },
+        { name: "Custom Dynamic Island", icon: "🏝️" },
+        { name: "Multi-Slot Display", icon: "📊" },
       ],
       faq: [
         {
-          question: "What is Till?",
+          question: "How do I start a Live Activity?",
           answer:
-            "Till is an all-in-one countdown and Live Activity app for iPhone. It lets you track countdowns, prayer times, football matches, and more — right from your Dynamic Island and Lock Screen.",
+            'Navigate to the feature you want (e.g. Prayer Times, Custom Island, Reminders), configure your settings, and tap the "Start Activity" button. The countdown will appear on your Dynamic Island and Lock Screen.',
         },
         {
-          question: "How do I create a countdown?",
+          question: "Why doesn't the Dynamic Island show on my phone?",
           answer:
-            'Tap the "+" button on the home screen, choose your event type, set a title and date, then tap Save. Your countdown will appear on the main screen and can be added to your Lock Screen or Dynamic Island.',
+            "Dynamic Island is available on iPhone 14 Pro and later models. On older iPhones, Live Activities will still appear on the Lock Screen. Make sure Live Activities are enabled in Settings → Till.",
         },
         {
-          question: "How do Live Activities work?",
+          question: "How do I add my own football team logo?",
           answer:
-            "Live Activities display real-time countdown information on your Lock Screen and Dynamic Island. To start one, tap the Live Activity button on any countdown. They update automatically and stay visible without opening the app. Requires iPhone 14 Pro or later for Dynamic Island.",
+            'Go to Custom Island → Football Teams → tap a team card or "+" to add a new team. You can pick a logo from your Photo Library, set team colors, and enter the team name and short code.',
         },
         {
-          question: "How do I add Till to my Lock Screen?",
+          question: "Prayer times are not accurate for my location.",
           answer:
-            "Long-press your Lock Screen, tap Customise, then tap the widget area. Search for Till and choose from available widgets including countdown timers, prayer times, and more.",
+            'Make sure location access is granted (Settings → Till. → Location → "While Using"). Also try the "Use Current Location" button to refresh. Till. uses the Aladhan API with the Diyanet (Turkey) calculation method by default.',
         },
         {
-          question: "Is Till free to use?",
+          question: "Can I run multiple Live Activities at once?",
           answer:
-            "Till is free to download with core countdown features included. Some premium features like unlimited Live Activities, football team tracking, and advanced customisation are available through an optional subscription.",
+            "iOS supports up to 5 simultaneous Live Activities. You can run a Prayer Times activity alongside a Custom Island activity, for example.",
         },
         {
-          question: "How do Prayer Times work?",
+          question: "The Qibla compass is not working.",
           answer:
-            "Prayer times are calculated based on your current location using established astronomical calculation methods. You can choose your preferred calculation method in Settings.",
+            "Ensure you have granted location and motion permissions. Also, keep your device away from magnets and metal objects that can interfere with the compass sensor. Try calibrating by moving your phone in a figure-8 pattern.",
         },
         {
-          question: "How does the Qibla Compass work?",
+          question: "How do I restore my purchases?",
           answer:
-            "The Qibla Compass uses your device's GPS and magnetometer to determine the direction of the Kaaba in Makkah from your current location. Hold your phone flat for best results.",
+            'Go to the app\'s settings or premium section and tap "Restore Purchases". Your previous purchases will be restored automatically through your Apple ID.',
         },
         {
-          question: "Can I track multiple countdowns at the same time?",
+          question: "My settings reset after closing the app.",
           answer:
-            "Yes! You can create as many countdowns as you like and run multiple Live Activities simultaneously from your Lock Screen and Dynamic Island.",
+            "Till. automatically saves your Custom Island configuration. If settings appear to reset, try force-quitting and reopening the app. If the issue persists, contact support.",
         },
         {
-          question: "How do I contact support?",
+          question: "How do I stop a Live Activity?",
           answer:
-            "You can reach us by email at mesutcydev@gmail.com. We typically respond within 24 hours.",
+            'Open Till., go to the active feature tab, and tap "Stop Activity". You can also long-press the Live Activity on your Lock Screen and tap "End Activity".',
         },
       ],
       troubleshooting: [
         {
-          title: "Live Activities not appearing",
+          title: "Live Activity not appearing",
           steps: [
-            "Open Settings → Till and ensure Live Activities are enabled.",
-            "Check that you are running iOS 16.1 or later.",
-            "Go to Settings → General → Background App Refresh and make sure Till is enabled.",
-            "Restart the app and try starting the Live Activity again.",
-            "If the issue persists, restart your iPhone.",
+            "Go to Settings → Till. → Live Activities → enable \"Allow Live Activities\"",
+            "Make sure you're running iOS 16.1 or later",
+            "Restart the app and try starting the activity again",
           ],
         },
         {
-          title: "Prayer Times seem inaccurate",
+          title: "Location not working",
           steps: [
-            "Open Settings → Privacy & Security → Location Services and ensure Till has location access set to 'While Using' or 'Always'.",
-            "Open Till → Settings and verify the correct calculation method is selected for your region.",
-            "Make sure your device's date and time are set to automatic (Settings → General → Date & Time).",
-            "Force-close Till and reopen it to refresh prayer time calculations.",
+            "Go to Settings → Privacy & Security → Location Services → Till.",
+            'Select "While Using the App"',
+            "Return to Till. and refresh",
           ],
         },
         {
-          title: "Qibla Compass not working correctly",
+          title: "Ads not loading",
           steps: [
-            "Ensure Location Services are enabled for Till.",
-            "Calibrate your compass by moving your phone in a figure-8 motion.",
-            "Move away from magnetic interference such as electronics, magnets, or metal objects.",
-            "Remove any magnetic phone case or accessory.",
-            "If the compass still seems off, restart your device and try again.",
-          ],
-        },
-        {
-          title: "Widgets not updating",
-          steps: [
-            "Remove the widget from your Home Screen or Lock Screen and add it again.",
-            "Check that Background App Refresh is enabled for Till in Settings.",
-            "Ensure the app has not been force-closed, as this can delay widget updates.",
-            "Restart your iPhone if widgets remain stuck.",
-          ],
-        },
-        {
-          title: "Notifications not received",
-          steps: [
-            "Go to Settings → Notifications → Till and ensure notifications are allowed.",
-            "Check that the notification type you expect (banners, sounds, badges) is enabled.",
-            "Make sure Do Not Disturb or a Focus mode is not silencing Till's notifications.",
-            "Open the app and verify that notifications are enabled for the specific countdown or prayer time.",
-            "Restart your device if the issue continues.",
+            "Ad availability depends on your region and network connection.",
+            "This does not affect app functionality.",
+            "Consider upgrading to Premium to remove ads entirely.",
           ],
         },
       ],
