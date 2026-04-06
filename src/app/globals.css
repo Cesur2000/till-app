@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #0a0a0a;
+  --color-foreground: #e8e8e8;
+  --color-card: #141414;
+  --color-muted: #888888;
+  --color-accent: #6C63FF;
+  --color-border: #222222;
+  --color-green: #34C759;
+  --color-orange: #FF9500;
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+a:hover {
+  opacity: 0.85;
+}
+
+/* Legal page content styling */
+.legal-content p {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.8;
+}
+
+.legal-content ul,
+.legal-content ol {
+  padding-left: 20px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.legal-content li {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.7;
+}
+
+.legal-content strong {
+  color: var(--color-foreground);
+}
+
+.legal-content a {
+  color: var(--color-accent);
+}
+
+.legal-content a:hover {
+  text-decoration: underline;
+}
